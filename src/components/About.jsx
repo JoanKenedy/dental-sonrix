@@ -5,15 +5,17 @@ const About = () => {
   const Somos = [
     {
       id: 1,
+      title: "Nosotros",
       texto:
-        "Somos tu clínica dental interdisciplinaria, integrada por  especialistas con más de 7 años de experiencia en su área.",
+        "Somos una clínica dental vanguardista y actualizada en los nuevos conceptos de la odontología moderna, permitiéndonos ofrecer tratamientos innovadores y estéticos, devolviendo la salud y función de las estructuras orales. ",
       texto2:
-        "Estamos para brindarte una atención personalizada y un servicio integral para lograr que tu sonrisa se vea como la imaginas.",
+        "Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta calidad en cada uno de nuestros servicios. Con un enfoque en Odontología Estética. ",
     },
     {
       id: 2,
+      title: "Nosotros",
       texto:
-        "Todos los integrantes de Dental Sonrix estamos avalados y certificados en nuestra especialidad.",
+        "Todos los integrantes de Dental Sonrix estamos avalados y certificados en nuestra especialidad.Estamos para brindarte una atención personalizada y un servicio integral para lograr que tu sonrisa se vea como la imaginas.",
       texto2:
         "Nos mantenemos constantemente actualizados para ofrecerte lo último en tecnología y los tratamientos más innovadores.",
     },
@@ -33,6 +35,7 @@ const About = () => {
     container.innerHTML = "";
     Somos.filter((text) => text.id == event).map((text) => {
       container.innerHTML += `
+      <h2 className="text-title" >${text.title}</h2>
         <p className="text-event" id="texto1">${text.texto}</p>
         <p className="text-event" id="texto2">${text.texto2}</p>
         
@@ -41,18 +44,21 @@ const About = () => {
     });
   };
   return (
-    <div className="about">
-      <h2>Nosotros</h2>
+    <div className="about" id="nosotros">
       <div className="container-about">
         <div className="about-slider" id="aboutSlider">
           <div className={`textos ${isSlider ? "show" : ""}`}>
+            <h2>Nosotros</h2>
             <span>
-              Somos tu clínica dental interdisciplinaria, integrada por
-              especialistas con más de 7 años de experiencia en su área.
+              Somos una clínica dental vanguardista y actualizada en los nuevos
+              conceptos de la odontología moderna, permitiéndonos ofrecer
+              tratamientos innovadores y estéticos, devolviendo la salud y
+              función de las estructuras orales.
             </span>
             <span>
-              Estamos para brindarte una atención personalizada y un servicio
-              integral para lograr que tu sonrisa se vea como la imaginas.
+              Trabajando de la mano con un equipo de especialistas, ofreciendo
+              la más alta calidad en cada uno de nuestros servicios. Con un
+              enfoque en Odontología Estética.
             </span>
           </div>
         </div>

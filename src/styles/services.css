@@ -1,0 +1,298 @@
+.services {
+  width: 100%;
+}
+.services .title-services {
+  text-align: center;
+  color: #2e2e2e;
+  font-size: 2.5em;
+}
+.container-services {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 45px;
+  margin: 20px auto;
+}
+.item-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
+  padding: 25px;
+  gap: 12px;
+}
+.item-services img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.btn-services {
+  display: block;
+  margin: auto;
+  width: 170px;
+  background-color: #3e606f;
+  padding: 8px 0px;
+  border: 0;
+  color: #fff;
+  font-size: 1.1em;
+}
+.modal-services-home {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.7s;
+}
+.modal-services-home.openModal {
+  transform: scale(1);
+  transition: 0.7s;
+}
+.modal-services-home i {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+  font-size: 35px;
+}
+.container-modal-services {
+  width: 90%;
+  background-color: #fff;
+  height: 80vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.container-modal-services img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.container-modal-services h2 {
+  color: #2e2e2e;
+  font-size: 1.4em;
+  padding: 0;
+  margin: 12px;
+}
+.container-modal-services p {
+  font-weight: 500;
+  text-align: justify;
+  font-size: 1em;
+}
+#btnAncla {
+  background-color: #3e606f !important;
+  display: block;
+  margin: 12px auto;
+  width: 200px;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px;
+}
+#btn-modal {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #fff;
+  color: #2e2e2e;
+  width: 200px;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.item-8 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .services {
+    width: 100%;
+  }
+  .services .title-services {
+    text-align: center;
+    color: #2e2e2e;
+    font-size: 2.5em;
+  }
+  .container-services {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: 20px auto;
+  }
+  .item-services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    gap: 12px;
+  }
+  .item-8 {
+    background-color: #3e606f;
+  }
+  .item-8 h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  .item-8 p {
+    color: #fff;
+    font-size: 1.1em;
+  }
+  .item-8 a {
+    background-color: #fff;
+    width: 170px;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #3e606f;
+  }
+
+  .item-services img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+  .btn-services {
+    display: block;
+    margin: auto;
+    width: 170px;
+    background-color: #3e606f;
+    padding: 12px 0px;
+    border: 0;
+    color: #fff;
+    font-size: 1.1em;
+    position: relative;
+  }
+  .btn-services::before {
+    content: "Haz click";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: #2e2e2e;
+    text-align: center;
+    transition: 0.5s all ease;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-services:hover::before {
+    height: 100%;
+    transition: 0.5s all ease;
+  }
+  .modal-services-home {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: 0.7s;
+  }
+  .modal-services-home.openModal {
+    transform: scale(1);
+    transition: 0.7s;
+  }
+  .modal-services-home i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #fff;
+    font-size: 35px;
+  }
+  .container-modal-services {
+    width: 50%;
+    background-color: #fff;
+    height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+  }
+  .container-modal-services img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+  }
+  .container-modal-services h2 {
+    color: #2e2e2e;
+    font-size: 1.7em;
+    padding: 0;
+    margin: 12px;
+  }
+  .container-modal-services p {
+    font-weight: 500;
+    text-align: justify;
+    font-size: 1.3em;
+  }
+  #btnAncla {
+    background-color: #2e2e2e !important;
+    display: block;
+    margin: 12px auto;
+    width: 200px;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+  }
+  #btnAncla:before {
+    content: "Agendar Cita";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: #3e606f;
+    text-align: center;
+    transition: 0.5s all ease;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #btnAncla:hover::before {
+    height: 100%;
+    transition: 0.5s all ease;
+  }
+  #btn-modal {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    color: #2e2e2e;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+}

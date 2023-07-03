@@ -3,6 +3,7 @@
   overflow-x: hidden;
   height: 70%;
   position: relative;
+  display: none;
 }
 .texto-hero {
   position: absolute;

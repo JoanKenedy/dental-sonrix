@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/hero.css";
 import Foto1 from "../assets/hero.jpg";
-import Foto2 from "../assets/diego.jpg";
+import Foto2 from "../assets/dr-mayte.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div className="hero" id="inicio">
       <img src={Foto1} alt="" className="img-escritorio" />
       <img src={Foto2} alt="" className="img-movil" />
       <div className="texto-hero">

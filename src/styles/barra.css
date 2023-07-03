@@ -1,0 +1,108 @@
+.barra-contact {
+  width: 100%;
+  background-color: #3e606f;
+}
+.container-contact {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 12px;
+  padding: 15px;
+}
+.item-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.item-contact h3 {
+  color: #fff;
+  font-size: 1.7em;
+}
+.item-contact p {
+  color: #fff;
+  font-size: 1.1em;
+}
+.sub-item-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sub-item-contact p {
+  color: #fff;
+  text-align: center;
+}
+.item-contact a {
+  display: block;
+  width: 200px;
+  background-color: #ad5472;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 12px auto;
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .barra-contact {
+    width: 100%;
+    background-color: #3e606f;
+    padding: 10px;
+  }
+  .container-contact {
+    width: 90%;
+    margin: 12px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+  }
+  .item-contact {
+    background-color: #ad5472;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+  }
+  .item-contact:nth-child(2) {
+    background-color: #ad5472;
+  }
+  .item-contact h3 {
+    color: #fff;
+    font-size: 2.2em;
+  }
+  .item-contact p {
+    color: #fff;
+    font-size: 1.4em;
+  }
+  .sub-item-contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .sub-item-contact p {
+    color: #fff;
+    text-align: left;
+  }
+  .item-contact a {
+    display: block;
+    width: 200px;
+    background-color: #3e606f;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 12px 0px 12px 0px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    transition: all 0.5s ease;
+  }
+  .item-contact a:hover {
+    transform: scale(0.9);
+    transition: all 0.5s ease;
+  }
+}

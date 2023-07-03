@@ -31,16 +31,16 @@ const Navbar = () => {
               <img src={Logo} alt="" />
             </div>
             <nav className={`menu-nav ${openMenu ? "openMenu" : ""}`}>
-              <a href="" className="menu-link">
+              <a href="#inicio" className="menu-link">
                 Inicio
               </a>
-              <a href="" className="menu-link">
+              <a href="#nosotros" className="menu-link">
                 Nosotros
               </a>
-              <a href="" className="menu-link">
+              <a href="#servicios" className="menu-link">
                 Servicios
               </a>
-              <a href="" className="menu-link">
+              <a href="#ubicacion" className="menu-link">
                 Ubicación
               </a>
               <a
