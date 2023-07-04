@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import Logo from "../assets/logotipo-sonrix.png";
 import Menu from "../assets/menu.png";
 import "../styles/navbar.css";
 
 const Navbar = () => {
   const [openMenu, isOpenMenu] = useState(false);
+
   return (
     <>
       <header>
@@ -31,22 +33,59 @@ const Navbar = () => {
               <img src={Logo} alt="" />
             </div>
             <nav className={`menu-nav ${openMenu ? "openMenu" : ""}`}>
-              <a href="#inicio" className="menu-link">
+              <Link
+                to="inicio"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="menu-link"
+                onClick={() => isOpenMenu(false)}
+              >
                 Inicio
-              </a>
-              <a href="#nosotros" className="menu-link">
+              </Link>
+              <Link
+                to="nosotros"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="menu-link"
+                onClick={() => isOpenMenu(false)}
+              >
                 Nosotros
-              </a>
-              <a href="#servicios" className="menu-link">
+              </Link>
+              <Link
+                to="servicios"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="menu-link"
+                onClick={() => isOpenMenu(false)}
+              >
                 Servicios
-              </a>
-              <a href="#ubicacion" className="menu-link">
+              </Link>
+              <Link
+                to="ubicacion"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="menu-link"
+                onClick={() => isOpenMenu(false)}
+              >
                 Ubicación
-              </a>
+              </Link>
               <a
                 href="https://api.whatsapp.com/send?phone=525652700762"
                 target="_blank"
                 className="menu-link nav-contacto"
+                onClick={() => isOpenMenu(false)}
               >
                 Agendar cita
               </a>

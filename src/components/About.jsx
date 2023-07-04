@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Element } from "react-scroll";
 import "../styles/about.css";
 
 const About = () => {

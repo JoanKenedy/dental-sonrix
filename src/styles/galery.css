@@ -21,6 +21,16 @@
   column-width: 50%;
 }
 @media (min-width: 768px) {
+  .container-galery {
+    width: 92%;
+    margin: 10px auto;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-width: 50%;
+    -moz-column-width: 50%;
+    column-width: 50%;
+  }
   .galery h2 {
     text-align: center;
     color: #2e2e2e;
@@ -33,4 +43,10 @@
     transform: scale(0.9);
     transition: all 0.5s ease;
   }
+  /*.item-galery:nth-child(6),
+  .item-galery:nth-child(5),
+  .item-galery:nth-child(7),
+  .item-galery:nth-child(11) {
+    display: none;
+  }*/
 }

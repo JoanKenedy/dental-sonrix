@@ -23,14 +23,14 @@ const Services = () => {
       title: "Odontologia Estética",
       imgSrc: Services2,
       texto:
-        "Un candidato para la estétetica restauradora debe visitar a su dentista general, quien formulará un plan de tratamiento para lograr el resultado deseado. En más sonrisas y nuestro enfoque dinámico e innovador en el manejo de la estética dental nos diferencea de los demas.",
+        "Un candidato para la estétetica restauradora debe visitar a su dentista general, quien formulará un plan de tratamiento para lograr el resultado deseado. En Dental Sonrix y nuestro enfoque dinámico e innovador en el manejo de la estética dental nos diferencea de los demas.",
     },
     {
       id: 3,
       title: "Ortodoncia",
       imgSrc: Services3,
       texto:
-        "La ortodoncia corrige los defectos de la posición dental para mantener una boca perfecta y sana. En Mas sonrisas, somos especialistas en ortodoncia y realizamos diferentes tipos de tratamientos para adaptarnos a tus necesidades.",
+        "La ortodoncia corrige los defectos de la posición dental para mantener una boca perfecta y sana. En Dental Sonrix, somos especialistas en ortodoncia y realizamos diferentes tipos de tratamientos para adaptarnos a tus necesidades.",
     },
     {
       id: 4,

@@ -5,7 +5,7 @@ import Foto2 from "../assets/dr-mayte.jpg";
 
 const Hero = () => {
   return (
-    <div className="hero" id="inicio">
+    <div className="hero">
       <img src={Foto1} alt="" className="img-escritorio" />
       <img src={Foto2} alt="" className="img-movil" />
       <div className="texto-hero">
