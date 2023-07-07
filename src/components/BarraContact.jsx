@@ -28,4 +28,5 @@ const BarraContact = () => {
   );
 };
 
+
 export default BarraContact;
