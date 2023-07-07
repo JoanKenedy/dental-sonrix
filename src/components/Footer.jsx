@@ -10,8 +10,8 @@ const Footer = () => {
             <div className="item-mapa">
               <h2>Ubicación</h2>
               <h3>
-                Avenida Baja California 210-Piso 3, Consultorio 301 Roma Sur
-                Cuauhtémoc 06760 Ciudad de México, CDMX México
+                Avenida Baja California 210-Piso 3, Consultorio 301, Roma Sur, Cuauhtémoc, 
+                06760, Ciudad de México, México.
               </h3>
               <a
                 href="https://api.whatsapp.com/send?phone=525652700762"

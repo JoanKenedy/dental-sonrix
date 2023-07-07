@@ -8,15 +8,15 @@ const About = () => {
       id: 1,
       title: "Nosotros",
       texto:
-        "Somos una clínica dental vanguardista y actualizada en los nuevos conceptos de la odontología moderna, permitiéndonos ofrecer tratamientos innovadores y estéticos, devolviendo la salud y función de las estructuras orales. ",
+        "Somos una clínica dental vanguardista y actualizada en los últimos conceptos de la odontología, permitiéndonos ofrecer tratamientos innovadores y estéticos, devolviendo la salud y función de las estructuras orales.",
       texto2:
-        "Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta calidad en cada uno de nuestros servicios. Con un enfoque en Odontología Estética. ",
+        "Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta calidad en cada uno de nuestros servicios. Con un enfoque en odontología estética.",
     },
     {
       id: 2,
       title: "Nosotros",
       texto:
-        "Todos los integrantes de Dental Sonrix estamos avalados y certificados en nuestra especialidad.Estamos para brindarte una atención personalizada y un servicio integral para lograr que tu sonrisa se vea como la imaginas.",
+        "Todos los integrantes de Dental Sonrix estamos avalados y certificados en nuestra especialidad. Estamos para brindarte una atención personalizada y un servicio integral, para lograr que tu sonrisa se vea como la imaginas.",
       texto2:
         "Nos mantenemos constantemente actualizados para ofrecerte lo último en tecnología y los tratamientos más innovadores.",
     },
@@ -51,15 +51,13 @@ const About = () => {
           <div className={`textos ${isSlider ? "show" : ""}`}>
             <h2>Nosotros</h2>
             <span>
-              Somos una clínica dental vanguardista y actualizada en los nuevos
-              conceptos de la odontología moderna, permitiéndonos ofrecer
-              tratamientos innovadores y estéticos, devolviendo la salud y
-              función de las estructuras orales.
+              Somos una clínica dental vanguardista y actualizada en los últimos conceptos 
+              de la odontología, permitiéndonos ofrecer tratamientos innovadores y estéticos, 
+              devolviendo la salud y función de las estructuras orales. 
             </span>
             <span>
-              Trabajando de la mano con un equipo de especialistas, ofreciendo
-              la más alta calidad en cada uno de nuestros servicios. Con un
-              enfoque en Odontología Estética.
+              Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta 
+              calidad en cada uno de nuestros servicios. Con un enfoque en odontología estética.
             </span>
           </div>
         </div>
