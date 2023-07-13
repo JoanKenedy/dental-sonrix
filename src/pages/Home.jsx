@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Promociones from "../components/Promociones";
 import Services from "../components/Services";
 import Galery from "../components/Galery";
 import BarraContact from "../components/BarraContact";
@@ -16,6 +17,7 @@ const Home = () => {
       <Hero />
       <Services />
       <About />
+      <Promociones/>
       <BarraContact />
       <Galery />
 

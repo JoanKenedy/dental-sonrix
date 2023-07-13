@@ -70,6 +70,18 @@ const Navbar = () => {
                 Servicios
               </Link>
               <Link
+                to="promo"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="menu-link"
+                onClick={() => isOpenMenu(false)}
+              >
+                Promociones
+              </Link>
+              <Link
                 to="ubicacion"
                 activeClass="active"
                 spy={true}
