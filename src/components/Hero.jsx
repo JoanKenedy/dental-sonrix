@@ -25,7 +25,10 @@ const Hero = () => {
 
     <>
     <div className="modal-promo" style={{transform: modalOpen ? 'scale(1)' : 'scale(0)'}} id="modal-promo">
-    <i class="fa-solid fa-x" onClick={modalClose}></i><h1>Jornada de limpieza</h1><img src={Promo} alt="" /><a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" id="btnAncla">Contacto</a>
+      <i class="fa-solid fa-x" onClick={modalClose}></i>
+      <h1>Luce una sonrisa espectacular <br /> Aprovecha nuestra promoción por tiempo limitado</h1>
+      <img src={Promo} alt="" />
+      <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" id="btnAncla">Contacto</a>
     </div>
       <div className="hero">
       <img src={Foto1} alt="" className="img-escritorio" />

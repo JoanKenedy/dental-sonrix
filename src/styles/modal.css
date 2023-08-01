@@ -19,6 +19,7 @@
 .modal-promo h1 {
   color: white;
   margin-bottom: 30px;
+  text-align: center;
 }
 .modal-promo i {
   color: white;
@@ -31,4 +32,11 @@
   .modal-promo img {
     max-width: 250px;
   }  
+  .modal-promo h1 {
+    font-size: 17px;
+    margin: 0 10px 10px 10px;
+  }
+  .modal-promo i {
+    top: 30px;
+  }
 }
