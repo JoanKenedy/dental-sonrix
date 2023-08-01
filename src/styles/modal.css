@@ -10,6 +10,8 @@
   flex-direction: column;
   top: 0;
   right: 0;
+  transform: scale(1);
+  transition: 0.7s;
 }
 .modal-promo img {
   max-width: 400px;
@@ -24,4 +26,9 @@
   right: 50px;
   top: 50px;
   font-size: 25px;
+}
+@media (max-width: 425px) {
+  .modal-promo img {
+    max-width: 250px;
+  }  
 }
