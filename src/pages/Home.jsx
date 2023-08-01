@@ -8,6 +8,7 @@ import Galery from "../components/Galery";
 import BarraContact from "../components/BarraContact";
 import Footer from "../components/Footer";
 import HeroMovil from "../components/HeroMovil";
+import Modal from "../components/Modal";
 
 const Home = () => {
   return (
