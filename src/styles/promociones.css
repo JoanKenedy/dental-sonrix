@@ -22,7 +22,48 @@
   margin-top: 0%;
   color: #000f00;
 }
-
+.urgencias-fixed{
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(45, 214, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+.urgencias-fixed a {
+  display: flex;
+}
+.urgencias-fixed img {
+  width: 40px;
+}
+.txt-urgencia {
+  background-color: red;
+  color: white;
+  position: fixed;
+  right: 30px;
+  bottom: 25px;
+  padding: 5px 35px 5px 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  z-index: 98;
+  animation: urgencias 2.5s ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes urgencias {
+  0% {
+    right: -75px;
+    transform: scale(0);
+  }
+  100% {
+    right: 40px;
+    transform: scale(1);
+  }
+}
 @media screen and (min-width: 768px) {
   .promo {
     margin: 7px auto;
@@ -39,5 +80,29 @@
   }
   .promotion-img {
     max-width: 80%;
+  }
+  .urgencias-fixed {
+    width: 85px;
+    height: 85px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .urgencias-fixed img {
+    width: 50px;
+  }
+  .txt-urgencia {
+    right: 30px;
+    bottom: 40px;
+    font-size: 20px;
+  }
+  @keyframes urgencias {
+    0% {
+      right: -60px;
+      transform: scale(0);
+    }
+    100% {
+      right: 75px;
+      transform: scale(1);
+    }
   }
 }
