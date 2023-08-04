@@ -28,7 +28,7 @@ const Hero = () => {
       <i class="fa-solid fa-x" onClick={modalClose}></i>
       <h1>Luce una sonrisa espectacular <br /> Aprovecha nuestra promoción por tiempo limitado</h1>
       <img src={Promo} alt="" />
-      <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" id="btnAncla">Contacto</a>
+      <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" id="btnContacto">Contacto</a>
     </div>
       <div className="hero">
       <img src={Foto1} alt="" className="img-escritorio" />
