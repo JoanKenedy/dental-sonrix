@@ -35,33 +35,67 @@
   border-radius: 50%;
   z-index: 99;
 }
-.urgencias-fixed a {
+.tel-fixed {
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 10px;
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 99;
+}
+.container-fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.urgencias-fixed a, .tel-fixed a {
   display: flex;
 }
 .urgencias-fixed img {
   width: 40px;
+}
+.tel-fixed img {
+  width: 100%;
 }
 .txt-urgencia {
   background-color: red;
   color: white;
   position: fixed;
   right: 30px;
-  bottom: 25px;
+  bottom: 95px;
   padding: 5px 35px 5px 10px;
   border-radius: 30px;
   font-size: 16px;
   z-index: 98;
-  animation: urgencias 2.5s ease-out;
+  animation: urgencias 4s ease-out;
   animation-iteration-count: infinite;
+}
+.animado { /*Animación para aparecer y desaparecer el botón*/
+  opacity: 0;
+  transition: all 0.5s;
 }
 @keyframes urgencias {
   0% {
     right: -75px;
     transform: scale(0);
   }
-  100% {
+  50% {
     right: 40px;
     transform: scale(1);
+  }
+  100% {
+    right: -75px;
+    transform: scale(0);
   }
 }
 @media screen and (min-width: 768px) {
@@ -82,27 +116,37 @@
     max-width: 80%;
   }
   .urgencias-fixed {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     bottom: 20px;
     right: 20px;
   }
+  .tel-fixed  {
+    width: 70px;
+    height: 70px;
+    bottom: 100px;
+    right: 20px;
+  }
   .urgencias-fixed img {
-    width: 50px;
+    width: 40px;
   }
   .txt-urgencia {
-    right: 30px;
-    bottom: 40px;
-    font-size: 20px;
+    right: 55px;
+    bottom: 115px;
+    font-size: 18px;
   }
   @keyframes urgencias {
     0% {
       right: -60px;
       transform: scale(0);
     }
-    100% {
-      right: 75px;
+    50% {
+      right: 60px;
       transform: scale(1);
+    }
+    100% {
+      right: -60px;
+      transform: scale(0);
     }
   }
 }
