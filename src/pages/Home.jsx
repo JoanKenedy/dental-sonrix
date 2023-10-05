@@ -9,6 +9,7 @@ import BarraContact from "../components/BarraContact";
 import Footer from "../components/Footer";
 import HeroMovil from "../components/HeroMovil";
 import Modal from "../components/Modal";
+import Video from "../components/Video";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Hero />
       <Services />
       <About />
+      <Video />
       <Promociones/>
       <BarraContact />
       <Galery />
