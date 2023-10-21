@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import Slider1 from "../assets/dr-mayte.jpg";
-import Slider2 from "../assets/galery-3.png";
+import Slider2 from "../assets/galery-3.jpg";
 import "../styles/heromovil.css";
 
 const HeroMovil = () => {
