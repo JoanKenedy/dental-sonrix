@@ -45,7 +45,7 @@
   .hero {
     width: 100%;
     overflow-x: hidden;
-    height: 550px;
+    height: auto;
     background-color: black;
     display: flex;
     justify-content: center;

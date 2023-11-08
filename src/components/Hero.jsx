@@ -1,6 +1,6 @@
 import React, { Component , useState, useEffect } from "react";
 import "../styles/hero.css";
-import Foto1 from "../assets/hero.jpg";
+import Foto1 from "../assets/bg-sonrix.jpg";
 import Foto2 from "../assets/dr-mayte.jpg";
 import Promo from "../assets/promo-jornada.jpeg";
 import "../styles/modal.css";
