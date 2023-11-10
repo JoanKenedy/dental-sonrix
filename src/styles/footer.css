@@ -8,6 +8,9 @@ footer {
 .mapa img {
   max-width: 100%;
 }
+.item-mapa iframe {
+  width: 100%;
+}
 .mapa h2 {
   text-align: center;
   color: #2e2e2e;

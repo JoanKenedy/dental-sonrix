@@ -22,7 +22,15 @@ const Footer = () => {
               </a>
             </div>
             <div className="item-mapa">
-              <img src={Mapa} alt="" />
+            <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.8053769241415!2d-99.17997599030991!3d19.377578042362373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff9b678aabc3%3A0xe0f997387f0db84f!2sAv.%20Insurgentes%20Sur%201188%2C%20Tlacoquemecatl%20del%20Valle%2C%20Benito%20Ju%C3%A1rez%2C%2003200%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1699654972168!5m2!1ses-419!2smx" 
+          width="600" 
+          height="450" 
+          style={{ border: 0 }}
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
             </div>
           </div>
         </div>
