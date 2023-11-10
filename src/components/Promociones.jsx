@@ -1,6 +1,7 @@
 import React from "react";
 import promocion1 from "../assets/blanqueamiento-cuadrado-dentix.jpg";
 import promocion2 from "../assets/limpieza-cuadrado-sonrix.jpg";
+import buenfin from "../assets/buenfin.jpg";
 import whats from "../assets/whats.jpg";
 import "../styles/promociones.css";
 import tel from "../assets/telefono.png"
@@ -48,6 +49,7 @@ const Promociones = () => {
           <h2>Promociones</h2>
         </div>
         <section className="promociones">
+          <img src={buenfin} alt="" className="promotion-img buenfin" />
           <img src={promocion1} alt="" className="promotion-img" />
           <img src={promocion2} alt="" className="promotion-img" />
         </section>
