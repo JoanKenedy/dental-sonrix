@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import "../styles/hero.css";
 import Foto1 from "../assets/bg-sonrix.jpg";
 import Foto2 from "../assets/dr-mayte.jpg";
-import Promo from "../assets/buenfin.jpg";
+import Promo from "../assets/sonrix-promo.jpg";
 import "../styles/modal.css";
 
 const Hero = () => {
@@ -29,7 +29,7 @@ const Hero = () => {
     {/* Inicia HTML del modal */}
     <div className="modal-promo" style={{transform: modalOpen ? 'scale(1)' : 'scale(0)'}} id="modal-promo">
       <i class="fa-solid fa-x" onClick={modalClose}></i>
-      <h1>Aprovecha nuestras promociones por BUEN FIN :)</h1>
+      <h1>¡Promoción vigente hasta terminar el año!</h1>
       <img src={Promo} alt="" />
       <div className="botones-modal">
         <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" id="btnContacto">Contacto</a>
