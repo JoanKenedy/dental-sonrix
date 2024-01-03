@@ -26,7 +26,7 @@ const Hero = () => {
   return (
 
     <>
-    {/* Inicia HTML del modal */}
+    {/* Inicia HTML del modal
     <div className="modal-promo" style={{transform: modalOpen ? 'scale(1)' : 'scale(0)'}} id="modal-promo">
       <i class="fa-solid fa-x" onClick={modalClose}></i>
       <h1>¡Promoción vigente hasta terminar el año!</h1>
@@ -59,7 +59,6 @@ const Hero = () => {
       </div>
     </div>
     </>
- 
   );
 };
 export default Hero;
