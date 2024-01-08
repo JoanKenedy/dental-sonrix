@@ -110,7 +110,7 @@
     font-size: 2em;
   }
   .promociones {
-    grid-template-columns: repeat(1, minmax(300px, 500px));
+    grid-template-columns: repeat(2, minmax(300px, 500px));
     place-items: center;
     gap: 0px;
     margin-top: 3%;

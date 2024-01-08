@@ -1,6 +1,6 @@
 import React from "react";
-import promocion1 from "../assets/blanqueamiento-cuadrado-dentix.jpg";
-import promocion2 from "../assets/limpieza-cuadrado-sonrix.jpg";
+import promocion1 from "../assets/promo-1.jpg";
+import promocion2 from "../assets/promo-2.jpg";
 import promocion3 from "../assets/sonrix-promo.jpg";
 import whats from "../assets/whats.jpg";
 import "../styles/promociones.css"; 
@@ -50,6 +50,7 @@ const Promociones = () => {
         </div>
         <section className="promociones">
           <img src={promocion2} alt="" className="promotion-img" />
+          <img src={promocion1} alt="" className="promotion-img" />
         </section>
       </div>
       <div className="container-fixed animado" id="animado">
