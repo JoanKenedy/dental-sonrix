@@ -65,7 +65,7 @@
 .urgencias-fixed a, .tel-fixed a {
   display: flex;
 }
-.urgencias-fixed img {
+.urgencias-fixed img, .to-promos img {
   width: 40px;
 }
 .tel-fixed img {
@@ -88,6 +88,37 @@
   opacity: 0;
   transition: all 0.5s;
 }
+.sale {
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+.to-promos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  bottom: 150px;
+  position: fixed;
+  background-color: #d146e1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all 0.275s linear;
+  cursor: pointer;
+}
+.to-promos .link-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero2 {
+  align-items: center !important;
+}
+.to-promos:hover {
+  background-color: #6185d9;
+  transition: all 0.275s linear;
+}
 @keyframes urgencias {
   0% {
     right: -75px;
@@ -103,6 +134,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .to-promos {
+    right: 20px;
+    bottom: 180px;
+  }
   .promo {
     margin: 7px auto;
   }
@@ -130,6 +165,10 @@
     height: 70px;
     bottom: 100px;
     right: 20px;
+  }
+  .to-promos {
+    width: 70px;
+    height: 70px;
   }
   .urgencias-fixed img {
     width: 40px;
