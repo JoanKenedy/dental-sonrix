@@ -4,7 +4,7 @@ import Logo from "../assets/logotipo-sonrix.png";
 import Menu from "../assets/menu.png";
 import "../styles/navbar.css";
 
-const Navbar = () => {
+const NavbarPro = () => {
   const [openMenu, isOpenMenu] = useState(false);
 
   return (
@@ -43,8 +43,8 @@ const Navbar = () => {
               <img src={Logo} alt="" />
             </div>
             <nav className={`menu-nav ${openMenu ? "openMenu" : ""}`}>
-              <Link
-                to="/"
+              <a
+                href="/"
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -54,9 +54,9 @@ const Navbar = () => {
                 onClick={() => isOpenMenu(false)}
               >
                 Inicio
-              </Link>
-              <Link
-                to="nosotros"
+              </a>
+              <a
+                href="/"
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -66,9 +66,9 @@ const Navbar = () => {
                 onClick={() => isOpenMenu(false)}
               >
                 Nosotros
-              </Link>
-              <Link
-                to="servicios"
+              </a>
+              <a
+                href="/"
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -78,7 +78,7 @@ const Navbar = () => {
                 onClick={() => isOpenMenu(false)}
               >
                 Servicios
-              </Link>
+              </a>
               <Link
                 to="promo"
                 activeClass="active"
@@ -130,4 +130,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarPro;
