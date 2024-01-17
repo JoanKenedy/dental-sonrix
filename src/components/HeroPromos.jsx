@@ -5,8 +5,9 @@ import Foto1 from "../assets/bg-sonrix.jpg";
 import Foto2 from "../assets/dr-mayte.jpg";
 import Promo from "../assets/sonrix-promo.jpg";
 import "../styles/modal.css";
+import "../styles/promociones.css"
 
-const Hero = () => {
+const HeroPromos = () => {
   //Funciones para parecer el modal de las promociones
   const [modalOpen, setmodalOpen] = useState(false);
 
@@ -51,14 +52,14 @@ const Hero = () => {
       <div className="hero">
       <img src={Foto1} alt="" className="img-escritorio" />
       <img src={Foto2} alt="" className="img-movil" />
-      <div className="texto-hero">
+      <div className="texto-hero hero2">
         <div className="container-texto-hero">
           <h2>Dental Sonrix</h2>
-          <p>Tu mejor opción para volver a sonreír</p>
+          <p>Promociones exclusivas para ti</p>
         </div>
       </div>
     </div>
     </>
   );
 };
-export default Hero;
+export default HeroPromos;
