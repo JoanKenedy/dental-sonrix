@@ -9,7 +9,7 @@ import "../styles/promociones.css";
 import tel from "../assets/telefono.png"
 import { useEffect, useState, useCallback } from "react";
 
-const Promociones = () => {
+const Promos = () => {
   //Script para comprobar la altura del scroll
   const [openMenu, isOpenMenu] = useState(false);
   const animado = document.getElementById("animado");
@@ -70,23 +70,9 @@ const Promociones = () => {
         <div className="txt-urgencia">
           <h4>Urgencias Dentales</h4>
         </div>
-        <div className="to-promos">
-          <Link
-            to="promo"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            className="menu-link link-promo"
-            onClick={() => isOpenMenu(false)}
-          >
-            <img src={etiqueta} alt="Etiqueta de descuento" />
-          </Link>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Promociones;
+export default Promos;
