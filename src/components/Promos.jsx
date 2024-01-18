@@ -52,8 +52,14 @@ const Promos = () => {
           <h2>Promociones</h2>
         </div>
         <section className="promociones">
-          <img src={promocion2} alt="" className="promotion-img" />
-          <img src={promocion1} alt="" className="promotion-img" />
+          <div className="container-promo">
+            <img src={promocion2} alt="" className="promotion-img" />
+            <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+          </div>
+          <div className="container-promo">
+            <img src={promocion1} alt="" className="promotion-img" />
+            <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+          </div>
         </section>
       </div>
       <div className="container-fixed animado" id="animado">
