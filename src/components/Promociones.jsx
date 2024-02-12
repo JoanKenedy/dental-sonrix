@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-scroll";
 import promocion1 from "../assets/promo-1.jpg";
 import promocion2 from "../assets/promo-2.jpg";
-import promocion3 from "../assets/sonrix-promo.jpg";
+import promocion3 from "../assets/blanqueamiento.jpg";
+import promocion4 from "../assets/muelas.jpg"
 import etiqueta from "../assets/etiqueta-de-precio.png"
 import whats from "../assets/whats.jpg";
 import "../styles/promociones.css"; 
@@ -53,11 +54,15 @@ const Promociones = () => {
         </div>
         <section className="promociones">
           <div className="container-promo">
+            <img src={promocion3} alt="" className="promotion-img" />
+            <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+          </div>
+          <div className="container-promo">
             <img src={promocion2} alt="" className="promotion-img" />
             <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
           </div>
           <div className="container-promo">
-            <img src={promocion1} alt="" className="promotion-img" />
+            <img src={promocion4} alt="" className="promotion-img" />
             <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
           </div>
         </section>
