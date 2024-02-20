@@ -137,6 +137,28 @@
   background-color: #6185d9;
   transition: all 0.275s linear;
 }
+.container-urgencias {
+  width: 100%;
+  padding: 0 1rem;
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-urgencias h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #000f00;
+}
+.container-urgencias img {
+  width: 100%;
+  border-radius: 10px;
+}
+.container-urgencias .urgencias-des {
+  display: none;
+}
 @keyframes urgencias {
   0% {
     right: -75px;
@@ -152,6 +174,20 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .container-urgencias h2 {
+    text-align: center;
+    font-size: 2.7rem;
+    margin-bottom: 35px;
+    color: #000f00;
+  }
+  .container-urgencias .urgencias-des {
+    display: block;
+    width: auto;
+    max-height: 600px;
+  }
+  .container-urgencias .urgencias {
+    display: none;
+  }
   .to-promos {
     right: 20px;
     bottom: 180px;

@@ -5,6 +5,8 @@ import promocion2 from "../assets/promo-2.jpg";
 import promocion3 from "../assets/blanqueamiento.jpg";
 import promocion4 from "../assets/muelas.jpg"
 import etiqueta from "../assets/etiqueta-de-precio.png"
+import urgencias from "../assets/urgencias.jpg"
+import urgenciasDes from "../assets/urgencias-des.jpg"
 import whats from "../assets/whats.jpg";
 import "../styles/promociones.css"; 
 import tel from "../assets/telefono.png"
@@ -48,6 +50,11 @@ const Promociones = () => {
   //Script para comprobar la altura del scroll
   return (
     <div>
+      <div className="container-urgencias">
+        <h2>Urgencias</h2>
+        <img src={urgencias} alt="Banner Urgencias" className="urgencias"/>
+        <img src={urgenciasDes} alt="Banner Urgencias" className="urgencias-des"/>
+      </div>
       <div className="promo">
         <div className="title">
           <h2>Promociones</h2>
