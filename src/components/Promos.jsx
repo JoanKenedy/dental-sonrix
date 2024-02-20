@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-scroll";
-import promocion1 from "../assets/promo-1.jpg";
 import promocion2 from "../assets/promo-2.jpg";
 import promocion3 from "../assets/blanqueamiento.jpg";
 import promocion4 from "../assets/muelas.jpg"
@@ -10,7 +9,7 @@ import "../styles/promociones.css";
 import tel from "../assets/telefono.png"
 import { useEffect, useState, useCallback } from "react";
 
-const Promociones = () => {
+const Promos = () => {
   //Script para comprobar la altura del scroll
   const [openMenu, isOpenMenu] = useState(false);
   const animado = document.getElementById("animado");
@@ -54,17 +53,17 @@ const Promociones = () => {
         </div>
         <section className="promociones">
           <div className="container-promo">
-            <img src={promocion3} alt="" className="promotion-img" />
-            <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
-          </div>
-          <div className="container-promo">
-            <img src={promocion2} alt="" className="promotion-img" />
-            <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
-          </div>
-          <div className="container-promo">
-            <img src={promocion4} alt="" className="promotion-img" />
-            <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
-          </div>
+              <img src={promocion3} alt="" className="promotion-img" />
+              <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+            </div>
+            <div className="container-promo">
+              <img src={promocion2} alt="" className="promotion-img" />
+              <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+            </div>
+            <div className="container-promo">
+              <img src={promocion4} alt="" className="promotion-img" />
+              <a href="https://api.whatsapp.com/send?phone=525652700762" target="_blank" rel="noopener noreferrer">Contáctanos</a>
+            </div>
         </section>
       </div>
       <div className="container-fixed animado" id="animado">
@@ -81,23 +80,9 @@ const Promociones = () => {
         <div className="txt-urgencia">
           <h4>Urgencias Dentales</h4>
         </div>
-        <div className="to-promos">
-          <Link
-            to="promo"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={500}
-            className="menu-link link-promo"
-            onClick={() => isOpenMenu(false)}
-          >
-            <img src={etiqueta} alt="Etiqueta de descuento" />
-          </Link>
-        </div>
       </div>
     </div>
   );
 };
 
-export default Promociones;
+export default Promos;

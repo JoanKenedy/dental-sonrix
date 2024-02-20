@@ -7,8 +7,27 @@
   grid-auto-rows: minmax(100px, auto);
   margin-top: 20px;
   margin-bottom: 20px;
+  place-content: center;
 }
-
+.container-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-promo a {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #6185d9;
+  margin-top: 30px;
+  transition: all 0.275s linear;
+  font-size: 1.3em;
+}
+.container-promo a:hover {
+  background-color: #d146e1;
+  transition: all 0.275s linear;
+}
 .promotion-img {
   max-width: 100%;
   object-fit: cover;
@@ -64,7 +83,7 @@
 .urgencias-fixed a, .tel-fixed a {
   display: flex;
 }
-.urgencias-fixed img {
+.urgencias-fixed img, .to-promos img {
   width: 40px;
 }
 .tel-fixed img {
@@ -87,6 +106,37 @@
   opacity: 0;
   transition: all 0.5s;
 }
+.sale {
+  right: 0;
+  top: 0;
+  position: fixed;
+}
+.to-promos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 10px;
+  bottom: 150px;
+  position: fixed;
+  background-color: #d146e1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all 0.275s linear;
+  cursor: pointer;
+}
+.to-promos .link-promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero2 {
+  align-items: center !important;
+}
+.to-promos:hover {
+  background-color: #6185d9;
+  transition: all 0.275s linear;
+}
 @keyframes urgencias {
   0% {
     right: -75px;
@@ -102,6 +152,10 @@
   }
 }
 @media screen and (min-width: 768px) {
+  .to-promos {
+    right: 20px;
+    bottom: 180px;
+  }
   .promo {
     margin: 7px auto;
   }
@@ -109,14 +163,14 @@
     font-size: 2em;
   }
   .promociones {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(350px, 500px));
     place-items: center;
     gap: 0px;
     margin-top: 3%;
     margin-bottom: 3%;
   }
   .promotion-img {
-    max-width: 80%;
+    max-width: 100%;
   }
   .urgencias-fixed {
     width: 70px;
@@ -129,6 +183,10 @@
     height: 70px;
     bottom: 100px;
     right: 20px;
+  }
+  .to-promos {
+    width: 70px;
+    height: 70px;
   }
   .urgencias-fixed img {
     width: 40px;
@@ -151,5 +209,14 @@
       right: -60px;
       transform: scale(0);
     }
+  }
+}
+@media (min-width: 1440px) {
+  .promociones {
+    grid-template-columns: repeat(3, minmax(300px, 450px));
+    place-items: center;
+    gap: 30px;
+    margin-top: 3%;
+    margin-bottom: 3%;
   }
 }
