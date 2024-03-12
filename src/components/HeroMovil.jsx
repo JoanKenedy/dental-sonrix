@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+// import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -10,8 +10,8 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
-import Slider1 from "../assets/dr-mayte.jpg";
-import Slider2 from "../assets/galery-3.jpg";
+import Slider1 from "../assets/dr-mayte.webp";
+import Slider2 from "../assets/galery-3.webp";
 import "../styles/heromovil.css";
 
 const HeroMovil = () => {

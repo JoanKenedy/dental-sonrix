@@ -1,9 +1,9 @@
-import React, { Component , useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import {  useState, useEffect } from "react";
+// import { Link } from "react-scroll";
 import "../styles/hero.css";
 import Foto1 from "../assets/bg-sonrix.jpg";
 import Foto2 from "../assets/dr-mayte.jpg";
-import Promo from "../assets/sonrix-promo.jpg";
+// import Promo from "../assets/sonrix-promo.jpg";
 import "../styles/modal.css";
 
 const Hero = () => {
@@ -14,9 +14,9 @@ const Hero = () => {
     setmodalOpen(true);
   }
     
-  function modalClose() {
-    setmodalOpen(false);
-  }
+  // function modalClose() {
+    // setmodalOpen(false);
+  // }
   useEffect(() => {
     const timer = setTimeout(() => {
       Open();
