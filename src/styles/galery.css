@@ -30,6 +30,7 @@
     -webkit-column-width: 50%;
     -moz-column-width: 50%;
     column-width: 50%;
+    max-width: 1280px;
   }
   .galery h2 {
     text-align: center;

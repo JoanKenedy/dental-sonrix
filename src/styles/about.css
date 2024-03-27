@@ -1,6 +1,6 @@
 .about {
   width: 100%;
-  background-image: url(../assets/17.jpg);
+  background-image: url(../assets/17.webp);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -40,8 +40,19 @@
   border-radius: 7px;
   font-size: 1.2em;
   color: #2e2e2e;
+  cursor: pointer;
+  transition: all 0.2s linear;
 }
-
+.container-about button:hover {
+  transition: all 0.2s linear;
+  background-color: #ad5472;
+  color: white;
+}
+.selected {
+  transition: all 0.2s linear;
+  background-color: #ad5472 !important;
+  color: white !important;
+}
 .textos {
   width: 100%;
 }

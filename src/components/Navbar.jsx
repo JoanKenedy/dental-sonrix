@@ -58,6 +58,7 @@ const Navbar = () => {
                 duration={500}
                 className="menu-link"
                 onClick={() => isOpenMenu(false)}
+                aria-label="Ir a la sección de inicio"
               >
                 Inicio
               </Link>
@@ -70,6 +71,7 @@ const Navbar = () => {
                 duration={500}
                 className="menu-link"
                 onClick={() => isOpenMenu(false)}
+                aria-label="Ir a la sección de nosotros"
               >
                 Nosotros
               </Link>
@@ -82,6 +84,7 @@ const Navbar = () => {
                 duration={500}
                 className="menu-link"
                 onClick={() => isOpenMenu(false)}
+                aria-label="Ir a la sección de servicios"
               >
                 Servicios
               </Link>
@@ -94,6 +97,7 @@ const Navbar = () => {
                 duration={500}
                 className="menu-link"
                 onClick={() => isOpenMenu(false)}
+                aria-label="Ir a la sección de promociones"
               >
                 Promociones
               </Link>
@@ -106,6 +110,7 @@ const Navbar = () => {
                 duration={500}
                 className="menu-link"
                 onClick={() => isOpenMenu(false)}
+                aria-label="Ir a la sección de ubicación"
               >
                 Ubicación
               </Link>

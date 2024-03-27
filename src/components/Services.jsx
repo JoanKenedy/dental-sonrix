@@ -8,6 +8,8 @@ import Services6 from "../assets/invasiva.webp";
 import Services7 from "../assets/implantologia.webp";
 import Services8 from "../assets/cirugia-bucal.webp";
 import "../styles/services.css";
+import { CardService } from "./CardService";
+import { CardModal } from "./CardModal";
 
 const Services = () => {
   const Servicios = [
@@ -69,125 +71,29 @@ const Services = () => {
     },
   ];
   const [isModal, setIsModal] = useState(false);
+  const [idService, setIdService] = useState(0);
   const handleModal = (e) => {
     setIsModal(true);
     let event = e.target.id;
-    openModal(event);
+    setIdService(event-1);
   };
-  const openModal = (event) => {
-    let modalContainer = document.getElementById("modalContainer");
-    modalContainer.innerHTML = "";
-    Servicios.filter((item) => item.id == event).map((item) => {
-      modalContainer.innerHTML += `
-       <img src=${item.imgSrc} alt="" />
-       <h2>${item.title} </h2>
-       <p>${item.texto} </p>
-       <a
-       href="https://api.whatsapp.com/send?phone=525652700762"
-       target="_blank"
-            id="btnAncla"
-            
-          >
-          
-            Contacto
-          </a>
-      
-       `;
-    });
-  };
+
 
   return (
     <div className="services" id="servicios">
       <h2 className="title-services">Servicios</h2>
       <div className="container-services">
-        <div className="item-services">
-          <img src={Services1} alt="Imagotipo Odontología General" />
-          <h2>Odontología General</h2>
-          <button
-            className="btn-services"
-            id="1"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services2} alt="Imagotipo odontología estética" />
-          <h2>Odontología Estética</h2>
-          <button
-            className="btn-services"
-            id="2"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services3} alt="Imagotipo ortodoncia" />
-          <h2>Ortodoncia</h2>
-          <button
-            className="btn-services"
-            id="3"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services4} alt="Imagotipo endodoncia" />
-          <h2>Endodoncia</h2>
-          <button
-            className="btn-services"
-            id="4"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services5} alt="Imagotipo prótesis" />
-          <h2>Prótesis</h2>
-          <button
-            className="btn-services"
-            id="5"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services6} alt="Imagotipo cirugía oral" />
-          <h2>Cirugía Oral</h2>
-          <button
-            className="btn-services"
-            id="6"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services7} alt="Imagotipo implantología dental" />
-          <h2>Implantología Dental</h2>
-          <button
-            className="btn-services"
-            id="7"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
-        <div className="item-services">
-          <img src={Services8} alt="Imagotipo periodoncia" />
-          <h2>Periodoncia</h2>
-          <button
-            className="btn-services"
-            id="8"
-            onClick={(e) => handleModal(e, !isModal)}
-          >
-            Ver más
-          </button>
-        </div>
+        {
+          Servicios.map((item) => (
+            <CardService 
+              key={item.id}
+              id={item.id}
+              img={item.imgSrc}
+              title={item.title}
+              HandleModal={handleModal}
+            />
+          ))
+        }
         <div className="item-services item-8">
           <h2>
             Dental Sonrix <br/> Trabaja para ti{" "}
@@ -207,12 +113,19 @@ const Services = () => {
         </div>
       </div>
       <div
-        className={`modal-services-home ${
-          isModal ? "modal-services-home openModal" : ""
-        }`}
+        className={`modal-services-home ${isModal ? "modal-services-home openModal" : ""}`}
+        onClick={() => setIsModal(false)}
       >
-        <i className="fa-solid fa-x" onClick={() => setIsModal(false)}></i>
-        <div className="container-modal-services" id="modalContainer"></div>
+        <div className="container-modal-services" id="modalContainer">
+          <i className="fa-solid fa-x"></i>
+          {
+            <CardModal 
+              title={Servicios[idService].title}
+              texto={Servicios[idService].texto}
+              img={Servicios[idService].imgSrc}
+            />
+          }
+        </div>
       </div>
     </div>
   );

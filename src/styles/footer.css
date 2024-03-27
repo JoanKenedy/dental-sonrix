@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  padding: 10px 0px;
+  padding-top: 10px;
 }
 .mapa {
   padding: 15px;
@@ -24,6 +24,13 @@ footer {
 .footer-footer {
   background-color: black;
   padding: 15px;
+}
+.footer-footer article {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer-footer p {
   color: #fff;
@@ -52,10 +59,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  footer {
-    width: 100%;
-    padding: 10px 0px;
-  }
   .mapa {
     padding: 15px 30px;
     display: flex;
@@ -92,7 +95,8 @@ footer {
     background-color: black;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   .footer-footer p {
     color: #fff;

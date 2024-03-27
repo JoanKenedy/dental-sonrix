@@ -1,4 +1,3 @@
-import React from "react";
 import "../styles/barra.css";
 const BarraContact = () => {
   return (
@@ -11,6 +10,7 @@ const BarraContact = () => {
             href="https://api.whatsapp.com/send?phone=525652700762"
             target="_blank"
             className="btn-rosa"
+            rel="noopener noreferrer"
           >
             Agendar cita
           </a>

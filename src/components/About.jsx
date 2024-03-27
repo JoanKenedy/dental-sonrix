@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Element } from "react-scroll";
+import { useState } from "react";
 import "../styles/about.css";
 
 const About = () => {
@@ -22,56 +21,46 @@ const About = () => {
     },
   ];
 
-  const [isSlider, setIsSlider] = useState(false);
 
-  const hadleSlider = (e) => {
-    setIsSlider(!isSlider);
+  
+  const [isSelected, setIsSelected] = useState(true);
+  const [actualInfo, setActualInfo] = useState(0);
+
+  const handleSlider = (e) => {
     let event = e.target.id;
-    console.log(event);
-    textSlider(event);
-  };
-
-  const textSlider = (event) => {
-    let container = document.getElementById("aboutSlider");
-    container.innerHTML = "";
-    Somos.filter((text) => text.id == event).map((text) => {
-      container.innerHTML += `
-      <h2 className="text-title" >${text.title}</h2>
-        <p className="text-event" id="texto1">${text.texto}</p>
-        <p className="text-event" id="texto2">${text.texto2}</p>
-        
-        
-        `;
-    });
+    if (event === '1') {
+      setIsSelected(true);
+      setActualInfo(0);
+    } else {
+      setIsSelected(false);
+      setActualInfo(1);
+    }
   };
   return (
     <div className="about" id="nosotros">
       <div className="container-about">
         <div className="about-slider" id="aboutSlider">
-          <div className={`textos ${isSlider ? "show" : ""}`}>
+          <div className="textos">
             <h2>Nosotros</h2>
             <span>
-              Somos una clínica dental vanguardista y actualizada en los últimos conceptos 
-              de la odontología, permitiéndonos ofrecer tratamientos innovadores y estéticos, 
-              devolviendo la salud y función de las estructuras orales. 
+              {Somos[actualInfo].texto}
             </span>
             <span>
-              Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta 
-              calidad en cada uno de nuestros servicios. Con un enfoque en odontología estética.
+              {Somos[actualInfo].texto2}
             </span>
           </div>
         </div>
         <button
-          className="btn-about"
+          className={`btn-about ${isSelected ? "selected" : ""}`}
           id="1"
-          onClick={(e) => hadleSlider(e, !isSlider)}
+          onClick={(e) => handleSlider(e)}
         >
           1
         </button>
         <button
-          className="btn-about"
+          className={`btn-about ${isSelected ? "" : "selected"}`}
           id="2"
-          onClick={(e) => hadleSlider(e, !isSlider)}
+          onClick={(e) => handleSlider(e)}
         >
           2
         </button>
