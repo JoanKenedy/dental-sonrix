@@ -27,7 +27,7 @@ const HeroMovil = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img src={Slider1} className="img-slider" />
+          <img src={Slider1} className="img-slider" alt="Fotografía del slider principal"/>
           <div className="texto-hero">
             <div className="container-texto-hero">
               <h2>Dental Sonrix</h2>
@@ -36,7 +36,7 @@ const HeroMovil = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Slider2} className="img-slider" />
+          <img src={Slider2} className="img-slider" alt="Fotografía del slider principal"/>
           <div className="texto-hero">
             <div className="container-texto-hero">
               <h2>Dental Sonrix</h2>
