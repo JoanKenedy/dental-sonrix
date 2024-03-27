@@ -101,7 +101,7 @@ const Services = () => {
       <h2 className="title-services">Servicios</h2>
       <div className="container-services">
         <div className="item-services">
-          <img src={Services1} alt="" />
+          <img src={Services1} alt="Imagotipo Odontología General" />
           <h2>Odontología General</h2>
           <button
             className="btn-services"
@@ -112,7 +112,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services2} alt="" />
+          <img src={Services2} alt="Imagotipo odontología estética" />
           <h2>Odontología Estética</h2>
           <button
             className="btn-services"
@@ -123,7 +123,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services3} alt="" />
+          <img src={Services3} alt="Imagotipo ortodoncia" />
           <h2>Ortodoncia</h2>
           <button
             className="btn-services"
@@ -134,7 +134,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services4} alt="" />
+          <img src={Services4} alt="Imagotipo endodoncia" />
           <h2>Endodoncia</h2>
           <button
             className="btn-services"
@@ -145,7 +145,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services5} alt="" />
+          <img src={Services5} alt="Imagotipo prótesis" />
           <h2>Prótesis</h2>
           <button
             className="btn-services"
@@ -156,7 +156,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services6} alt="" />
+          <img src={Services6} alt="Imagotipo cirugía oral" />
           <h2>Cirugía Oral</h2>
           <button
             className="btn-services"
@@ -167,7 +167,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services7} alt="" />
+          <img src={Services7} alt="Imagotipo implantología dental" />
           <h2>Implantología Dental</h2>
           <button
             className="btn-services"
@@ -178,7 +178,7 @@ const Services = () => {
           </button>
         </div>
         <div className="item-services">
-          <img src={Services8} alt="" />
+          <img src={Services8} alt="Imagotipo periodoncia" />
           <h2>Periodoncia</h2>
           <button
             className="btn-services"
