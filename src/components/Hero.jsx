@@ -1,28 +1,27 @@
-import {  useState, useEffect } from "react";
+// import {  useState, useEffect } from "react";
 // import { Link } from "react-scroll";
 import "../styles/hero.css";
-import Foto1 from "../assets/bg-sonrix.jpg";
-import Foto2 from "../assets/dr-mayte.jpg";
-// import Promo from "../assets/sonrix-promo.jpg";
+import Foto1 from "../assets/bg-sonrix.webp";
+
 import "../styles/modal.css";
 
 const Hero = () => {
   //Funciones para parecer el modal de las promociones
-  const [modalOpen, setmodalOpen] = useState(false);
+  // const [modalOpen, setModalOpen] = useState(false);
 
-  function Open() {
-    setmodalOpen(true);
-  }
+  // function Open() {
+  //   setModalOpen(true);
+  // }
     
   // function modalClose() {
-    // setmodalOpen(false);
+    // setModalOpen(false);
   // }
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      Open();
-    }, 2000);
-    return () => clearTimeout(timer);
-  }, []); //termina script de los modales
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     Open();
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }, []); //termina script de los modales
   return (
 
     <>
@@ -48,9 +47,8 @@ const Hero = () => {
       </div>
     </div>
     {/* Termina HTML del modal */}
-      <div className="hero">
-      <img src={Foto1} alt="" className="img-escritorio" />
-      <img src={Foto2} alt="" className="img-movil" />
+    <div className="hero">
+      <img src={Foto1} alt="Fotografía principal del hero Dental Sonrix" className="img-escritorio" />
       <div className="texto-hero">
         <div className="container-texto-hero">
           <h2>Dental Sonrix</h2>
