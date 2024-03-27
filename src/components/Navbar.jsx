@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-scroll";
 import Logo from "../assets/logotipo-sonrix.png";
-import Menu from "../assets/menu.png";
+// import Menu from "../assets/menu.png";
 import "../styles/navbar.css";
 
 const Navbar = () => {
@@ -13,17 +13,22 @@ const Navbar = () => {
         <div className="header-top">
           <div className="item-header-top">
             <p>Teléfono</p>
-            <a href="tel:5652700762" target="_blank">
+            <a 
+              href="tel:5652700762" 
+              target="_blank"
+              rel="noopener noreferrer"  
+            >
               5652700762
             </a>
           </div>
           <div className="item-header-top whatsapp">
-            <p>Whatsapp</p>
+            <p>WhatsApp</p>
             <a
               href="https://api.whatsapp.com/send?phone=525652700762"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              +525652700762
+              5652700762
             </a>
           </div>
           <div className="urgencias item-header-top">
@@ -31,6 +36,7 @@ const Navbar = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=525652700762"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Urgencias Dentales
               </a>
@@ -40,7 +46,7 @@ const Navbar = () => {
         <div className="menu">
           <div className="container-menu">
             <div className="container-logo">
-              <img src={Logo} alt="" />
+              <img src={Logo} alt="Logo de Dental Sonrix" />
             </div>
             <nav className={`menu-nav ${openMenu ? "openMenu" : ""}`}>
               <Link
@@ -108,6 +114,7 @@ const Navbar = () => {
                 target="_blank"
                 className="agendar menu-link nav-contacto"
                 onClick={() => isOpenMenu(false)}
+                rel="noopener noreferrer"
               >
                 Agendar cita
               </a>
@@ -115,14 +122,17 @@ const Navbar = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=525652700762"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Urgencias Dentales
               </a>
             </div>
             </nav>
-            <div className="btn-menu" onClick={() => isOpenMenu(!openMenu)}>
-              <img src={Menu} alt="" />
-            </div>
+            <button className={`btn-menu ${openMenu ? "open" : ""}`} onClick={() => isOpenMenu(!openMenu)}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
           </div>
         </div>
       </header>
