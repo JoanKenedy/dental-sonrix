@@ -5,11 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 // import required modules
-import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
+import { EffectFade, Autoplay } from "swiper/modules";
 import Slider1 from "../assets/dr-mayte.webp";
 import Slider2 from "../assets/galery-3.webp";
 import "../styles/heromovil.css";
@@ -20,11 +18,12 @@ const HeroMovil = () => {
       <Swiper
         spaceBetween={30}
         effect={"fade"}
+        loop
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
         }}
-        modules={[Autoplay, EffectFade, Navigation, Pagination]}
+        modules={[Autoplay, EffectFade]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -32,7 +31,7 @@ const HeroMovil = () => {
           <div className="texto-hero">
             <div className="container-texto-hero">
               <h2>Dental Sonrix</h2>
-              <p>Tu mejor opción para volver a sonreir</p>
+              <p>Tu mejor opción para volver a sonreír</p>
             </div>
           </div>
         </SwiperSlide>
