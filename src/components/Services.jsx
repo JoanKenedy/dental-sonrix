@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import Services1 from "../assets/biomimetica.png";
-import Services2 from "../assets/estetica.png";
-import Services3 from "../assets/ortodoncia.png";
-import Services4 from "../assets/endodoncia.png";
-import Services5 from "../assets/maxilar.png";
-import Services6 from "../assets/invasiva.png";
-import Services7 from "../assets/implantologia.png";
-import Services8 from "../assets/cirugia-bucal.png";
+import { useState } from "react";
+import Services1 from "../assets/biomimetica.webp";
+import Services2 from "../assets/estetica.webp";
+import Services3 from "../assets/ortodoncia.webp";
+import Services4 from "../assets/endodoncia.webp";
+import Services5 from "../assets/maxilar.webp";
+import Services6 from "../assets/invasiva.webp";
+import Services7 from "../assets/implantologia.webp";
+import Services8 from "../assets/cirugia-bucal.webp";
 import "../styles/services.css";
 
 const Services = () => {
@@ -200,6 +200,7 @@ const Services = () => {
           <a
             href="https://api.whatsapp.com/send?phone=525652700762"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Contacto
           </a>
@@ -210,7 +211,7 @@ const Services = () => {
           isModal ? "modal-services-home openModal" : ""
         }`}
       >
-        <i class="fa-solid fa-x" onClick={() => setIsModal(false)}></i>
+        <i className="fa-solid fa-x" onClick={() => setIsModal(false)}></i>
         <div className="container-modal-services" id="modalContainer"></div>
       </div>
     </div>
