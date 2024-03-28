@@ -48,7 +48,7 @@ const Hero = () => {
     </div>
     {/* Termina HTML del modal */}
     <div className="hero">
-      <img src={Foto1} alt="Fotografía principal del hero Dental Sonrix" className="img-escritorio" loading="eager"/>
+      <img src={Foto1} alt="Fotografía principal del hero Dental Sonrix" className="img-escritorio" loading="eager" />
       <div className="texto-hero">
         <div className="container-texto-hero">
           <h2>Dental Sonrix</h2>

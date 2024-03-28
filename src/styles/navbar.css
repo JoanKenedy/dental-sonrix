@@ -111,7 +111,9 @@ header {
   font-weight: 500;
   cursor: pointer;
 }
-
+.menu-link:hover {
+  text-decoration: underline;
+}
 .btn-urgencias {
   color: white;
   background-color: red;
