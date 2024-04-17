@@ -1,6 +1,6 @@
 import NavbarPro from '../components/NavbarPro'
 import HeroPromos from '../components/HeroPromos'
-import Promos from '../components/Promos'
+import Promociones from '../components/Promociones'
 import BarraContact from '../components/BarraContact'
 import Footer from '../components/Footer'
 import HeroMovil from '../components/HeroMovil'
@@ -11,7 +11,7 @@ const Home = () => {
       <NavbarPro />
       <HeroMovil />
       <HeroPromos />
-      <Promos />
+      <Promociones />
       <BarraContact />
       <Footer />
     </div>

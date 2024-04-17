@@ -6,6 +6,23 @@ import urgencias from '../assets/urgencias.webp'
 import urgenciasDes from '../assets/urgencias-des.webp'
 
 const Promociones = () => {
+  const promos = [
+    {
+      id: 1,
+      imgSrc: promotion3,
+      alt: 'Promoción de blanqueamiento dental'
+    },
+    {
+      id: 2,
+      imgSrc: promotion2,
+      alt: 'Promoción de limpieza dental'
+    },
+    {
+      id: 3,
+      imgSrc: promotion4,
+      alt: 'Promoción extracción de muelas del juicio'
+    }
+  ]
   return (
     <div>
       <div className='container-urgencias'>
@@ -18,18 +35,14 @@ const Promociones = () => {
           <h2>Promociones</h2>
         </div>
         <section className='promociones'>
-          <div className='container-promo'>
-            <img src={promotion3} alt='Promoción de blanqueamiento dental' className='promotion-img' />
-            <a href='https://api.whatsapp.com/send?phone=525652700762' target='_blank' rel='noopener noreferrer'>Contáctanos</a>
-          </div>
-          <div className='container-promo'>
-            <img src={promotion2} alt='Promoción de limpieza dental' className='promotion-img' />
-            <a href='https://api.whatsapp.com/send?phone=525652700762' target='_blank' rel='noopener noreferrer'>Contáctanos</a>
-          </div>
-          <div className='container-promo'>
-            <img src={promotion4} alt='Promoción extracción de muelas del juicio' className='promotion-img' />
-            <a href='https://api.whatsapp.com/send?phone=525652700762' target='_blank' rel='noopener noreferrer'>Contáctanos</a>
-          </div>
+          {
+            promos.map((promo) => (
+              <div className='container-promo' key={promo.id}>
+                <img src={promo.imgSrc} alt={promo.alt} className='promotion-img' />
+                <a href='https://api.whatsapp.com/send?phone=525652700762' target='_blank' rel='noopener noreferrer'>Contáctanos</a>
+              </div>
+            ))
+          }
         </section>
       </div>
     </div>

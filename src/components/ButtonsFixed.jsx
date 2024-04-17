@@ -24,7 +24,7 @@ export const ButtonFixed = () => {
     window.addEventListener('scroll', handleNavigation)
 
     return () => {
-      window.removeEventListener('scroll', handleNavigation) //
+      window.removeEventListener('scroll', handleNavigation)
     }
   }, [handleNavigation])
   return (
