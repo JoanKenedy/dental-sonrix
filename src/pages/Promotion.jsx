@@ -1,9 +1,9 @@
-import NavbarPro from "../components/NavbarPro";
-import HeroPromos from "../components/HeroPromos";
-import Promos from "../components/Promos";
-import BarraContact from "../components/BarraContact";
-import Footer from "../components/Footer";
-import HeroMovil from "../components/HeroMovil";
+import NavbarPro from '../components/NavbarPro'
+import HeroPromos from '../components/HeroPromos'
+import Promos from '../components/Promos'
+import BarraContact from '../components/BarraContact'
+import Footer from '../components/Footer'
+import HeroMovil from '../components/HeroMovil'
 
 const Home = () => {
   return (
@@ -11,11 +11,11 @@ const Home = () => {
       <NavbarPro />
       <HeroMovil />
       <HeroPromos />
-      <Promos/>
+      <Promos />
       <BarraContact />
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
