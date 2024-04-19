@@ -1,84 +1,70 @@
-import React, { useState } from "react";
-import { Element } from "react-scroll";
-import "../styles/about.css";
+import { useState } from 'react'
+import '../styles/about.css'
 
 const About = () => {
   const Somos = [
     {
       id: 1,
-      title: "Nosotros",
+      title: 'Nosotros',
       texto:
-        "Somos una clínica dental vanguardista y actualizada en los últimos conceptos de la odontología, permitiéndonos ofrecer tratamientos innovadores y estéticos, devolviendo la salud y función de las estructuras orales.",
+        'Somos una clínica dental vanguardista y actualizada en los últimos conceptos de la odontología, permitiéndonos ofrecer tratamientos innovadores y estéticos, devolviendo la salud y función de las estructuras orales.',
       texto2:
-        "Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta calidad en cada uno de nuestros servicios. Con un enfoque en odontología estética.",
+        'Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta calidad en cada uno de nuestros servicios. Con un enfoque en odontología estética.'
     },
     {
       id: 2,
-      title: "Nosotros",
+      title: 'Nosotros',
       texto:
-        "Todos los integrantes de Dental Sonrix estamos avalados y certificados en nuestra especialidad. Estamos para brindarte una atención personalizada y un servicio integral, para lograr que tu sonrisa se vea como la imaginas.",
+        'Todos los integrantes de Dental Sonrix estamos avalados y certificados en nuestra especialidad. Estamos para brindarte una atención personalizada y un servicio integral, para lograr que tu sonrisa se vea como la imaginas.',
       texto2:
-        "Nos mantenemos constantemente actualizados para ofrecerte lo último en tecnología y los tratamientos más innovadores.",
-    },
-  ];
+        'Nos mantenemos constantemente actualizados para ofrecerte lo último en tecnología y los tratamientos más innovadores.'
+    }
+  ]
 
-  const [isSlider, setIsSlider] = useState(false);
+  const [isSelected, setIsSelected] = useState(true)
+  const [actualInfo, setActualInfo] = useState(0)
 
-  const hadleSlider = (e) => {
-    setIsSlider(!isSlider);
-    let event = e.target.id;
-    console.log(event);
-    textSlider(event);
-  };
-
-  const textSlider = (event) => {
-    let container = document.getElementById("aboutSlider");
-    container.innerHTML = "";
-    Somos.filter((text) => text.id == event).map((text) => {
-      container.innerHTML += `
-      <h2 className="text-title" >${text.title}</h2>
-        <p className="text-event" id="texto1">${text.texto}</p>
-        <p className="text-event" id="texto2">${text.texto2}</p>
-        
-        
-        `;
-    });
-  };
+  const handleSlider = (e) => {
+    const event = e.target.id
+    if (event === '1') {
+      setIsSelected(true)
+      setActualInfo(0)
+    } else {
+      setIsSelected(false)
+      setActualInfo(1)
+    }
+  }
   return (
-    <div className="about" id="nosotros">
-      <div className="container-about">
-        <div className="about-slider" id="aboutSlider">
-          <div className={`textos ${isSlider ? "show" : ""}`}>
+    <div className='about' id='nosotros'>
+      <div className='container-about'>
+        <div className='about-slider' id='aboutSlider'>
+          <div className='textos'>
             <h2>Nosotros</h2>
             <span>
-              Somos una clínica dental vanguardista y actualizada en los últimos conceptos 
-              de la odontología, permitiéndonos ofrecer tratamientos innovadores y estéticos, 
-              devolviendo la salud y función de las estructuras orales. 
+              {Somos[actualInfo].texto}
             </span>
             <span>
-              Trabajando de la mano con un equipo de especialistas, ofreciendo la más alta 
-              calidad en cada uno de nuestros servicios. Con un enfoque en odontología estética.
+              {Somos[actualInfo].texto2}
             </span>
           </div>
         </div>
         <button
-          className="btn-about"
-          id="1"
-          onClick={(e) => hadleSlider(e, !isSlider)}
+          className={`btn-about ${isSelected ? 'selected' : ''}`}
+          id='1'
+          onClick={(e) => handleSlider(e)}
         >
           1
         </button>
         <button
-          className="btn-about"
-          id="2"
-          onClick={(e) => hadleSlider(e, !isSlider)}
+          className={`btn-about ${isSelected ? '' : 'selected'}`}
+          id='2'
+          onClick={(e) => handleSlider(e)}
         >
           2
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-
-export default About;
+export default About

@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  padding: 10px 0px;
+  padding-top: 10px;
 }
 .mapa {
   padding: 15px;
@@ -25,6 +25,13 @@ footer {
   background-color: black;
   padding: 15px;
 }
+.footer-footer article {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .footer-footer p {
   color: #fff;
   font-size: 0.9em;
@@ -33,9 +40,12 @@ footer {
   color: #fff;
   font-size: 0.9em;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer-footer a:nth-child(2) {
-  margin: 7px 12px;
+.footer-footer a i {
+  margin-right: 5px;
 }
 .btn-rosa {
   display: block;
@@ -50,12 +60,11 @@ footer {
   font-weight: 700;
   transition: all 0.5s ease;
 }
-
+.item-footer-footer:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 768px) {
-  footer {
-    width: 100%;
-    padding: 10px 0px;
-  }
   .mapa {
     padding: 15px 30px;
     display: flex;
@@ -92,7 +101,8 @@ footer {
     background-color: black;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   .footer-footer p {
     color: #fff;
@@ -122,9 +132,5 @@ footer {
   .btn-rosa:hover {
     transform: scale(0.9);
     transition: all 0.5s ease;
-  }
-  .item-footer-footer:nth-child(2) {
-    display: flex;
-    flex-direction: column;
   }
 }

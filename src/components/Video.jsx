@@ -1,17 +1,31 @@
-import React from "react";
-import "../styles/video.css";
-import videosonrix from "../assets/Somos-dental-sonrix.mp4";
-import poster from "../assets/poster.png";
-
+import '../styles/video.css'
+// import video from '../assets/Somos-dental-sonrix.mp4'
+import poster from '../assets/poster.webp'
+import '@justinribeiro/lite-youtube'
 
 const Video = () => {
-
+  const styles = {
+    width: '100%',
+    maxHeight: '560px',
+    maxWidth: '950px',
+    aspectRatio: '16/9'
+  }
   return (
-    <div className="video-container">
-      <h3>Conoce más sobre nosotros</h3>
-      <video src={videosonrix} controls poster={poster}></video>
+    <div className='video-container'>
+      <div>
+        <h3>Conoce más sobre nosotros</h3>
+        <div className='video'>
+          <lite-youtube
+            videoid='AmsGJr2P4xg'
+            videotitle='Nosotros Somos Dental Sonrix'
+            posterquality={poster}
+            videoplay='Reproducir video'
+            style={styles}
+          />
+        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Video;
+export default Video

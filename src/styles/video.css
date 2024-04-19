@@ -9,11 +9,22 @@
 }
 .video-container h3 {
   font-size: 2.5em;
-  color: #553ece;
+  color: #000f00;
   margin-bottom: 20px;
+  padding: 0 1rem;
+  text-align: center;
 }
-.video-container video {
+.video-container div {
   width: 100%;
   max-width: 1200px;
   height: auto;
+}
+.video-container div .video {
+  height: 100%;
+  max-height: 500px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
 }

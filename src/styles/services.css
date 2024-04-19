@@ -36,6 +36,7 @@
   border: 0;
   color: #fff;
   font-size: 1.1em;
+  cursor: pointer;
 }
 .modal-services-home {
   position: fixed;
@@ -56,10 +57,11 @@
   transition: 0.7s;
 }
 .modal-services-home i {
+  cursor: pointer;
   position: absolute;
   top: 10px;
   right: 15px;
-  color: #fff;
+  color: #2a2929;
   font-size: 35px;
 }
 .container-modal-services {
@@ -72,6 +74,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: relative;
 }
 .container-modal-services img {
   width: 90px;
@@ -217,13 +220,6 @@
   .modal-services-home.openModal {
     transform: scale(1);
     transition: 0.7s;
-  }
-  .modal-services-home i {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: #fff;
-    font-size: 35px;
   }
   .container-modal-services {
     width: 50%;
